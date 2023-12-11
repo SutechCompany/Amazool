@@ -1,0 +1,341 @@
+
+
+
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap-theme.min.css">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap-theme.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Cairo|Tajawal&display=swap" rel="stylesheet" >
+         <meta charset="utf-8"/>
+
+        <style>
+             @import url(‘https://fonts.googleapis.com/css?family=Cairo‘);
+             *{
+                font-family: Cairo;
+                font-family: 'Cairo';
+             }
+            body{
+                background-color:rgba(250, 250, 250, 1);
+                margin:0;
+
+            }
+            header {
+                box-shadow:1px 1px 20px 5px rgba(0,0,0,0.04),
+                4px 4px 20px 1px rgba(255,255,255,1);
+                padding-top:5%;
+                background-color:rgb(49, 75, 123);
+               
+            }
+            header nav{
+                margin-top:1;
+                margin-left:4%;
+                width:10%;
+                height:7%;
+                
+
+              
+            }
+            header nav div{
+                background-color:#fff;
+                width:100%;
+                height:10%;
+                display:inline-block;
+                margin-bottom:14%; 
+                border-radius:5px;
+                
+
+            }
+           
+            header .img {
+                width:40%;
+                float:right;
+                margin-top:-31%;
+                margin-right:30%;
+            }
+            header .cart {
+                width:16%;
+                float:right;
+                margin-top:-28%;
+                margin-left:50%;
+            }
+           
+            header h2{
+                margin-top:-15%;
+                margin-left:35%;
+                padding-bottom:3%;
+                color:#78aeb2;
+                font-family:cairo;
+            }
+             main input{
+                 width:70%;
+                 margin-left:15%;
+                 margin-top:-2%;
+                 font-family:cairo;
+                 text-align:right;
+                 height:4%;
+                 font-size:14px;
+                 color:#78aeb2;
+                 border:1px solid rgba(0,0,0,0.4);
+                 border-radius:10px;
+                 padding:5%;
+                 padding-right:10%;
+                 padding-bottom:6%;
+
+                
+             }
+             main .glyphicon-search{
+                 color:rgba(0,0,0,0.5);
+                 margin-left:-8%;
+                 font-size:14px;
+             }
+         main .container{
+                width:85%;
+                
+                margin-left:7%;
+                margin-top:10%;
+               
+                padding-top:5%;
+                
+            }
+            main .container img{
+                width:100%;
+                margin-top:12%;
+                box-shadow:1px 1px 20px 5px rgba(0,0,0,0.04),
+                4px 4px 20px 1px rgba(255,255,255,1);
+                background-color:#fff;
+                border-radius:8px;
+
+            }
+            main .container .img{
+                width:85%;
+                margin-left:8%;
+                border-radius:8px;
+                
+                
+            }
+            main .container h1{
+                margin-left:28%;
+                width:60%;
+                color:#78aeb2;
+                font-family:cairo;
+                font-size:170%;
+                margin-top:5%;
+                color:rgba(0,0,0,0.5);
+                
+                text-align:right;
+
+                
+            }
+            main .container p{
+                color:#aaa;
+                margin-top: 3%;
+                font-family:cairo;
+                
+                font-size:120%;
+                width:70%;
+                margin-left:54%;
+                font-weight:620;
+               
+            }
+            main .container .stars .glyphicon-star{
+                color:gold;
+                font-size:25px;
+                margin-bottom:18px;
+                margin-left:5%;
+
+            }
+             main .container .stars .glyphicon-star-empty{
+                color:gold;
+                font-size:25px;
+                margin-bottom:18px;
+                margin-left:5%;
+
+            }
+            main .container .stars{
+                margin-left:20%;
+            }
+
+            
+            main .container button{
+                width:85%;
+                border:none;
+                background-color:#f79703;
+                margin:0px;
+                font-size:17px;
+                font-weight:600;
+                font-family:cairo;
+                color:#fff;
+                border-radius:7px;
+                margin-left:10%;
+                padding:2%;
+                margin-top:-2%;
+            } 
+            aside .menu{
+                font-family:cairo ;
+                background-color:#fff;
+                width:50%; 
+                padding-bottom:20%;
+                margin-top:1%;
+                position:relative;
+                z-index:2;
+                display:none;
+                box-shadow:1px 1px 10px  rgba(97, 80, 84, 1);
+            }
+            aside .menu .profile{
+                padding-top:0.2%;
+                background-color:#78aeb2;
+                height:15%;
+            }
+            aside .menu .profile{
+                text-align:center;
+            }
+            aside .menu .profile h2{
+                color:rgba(250, 250, 250, 1);
+                font-size:140%;
+                
+            }
+            aside .menu .profile h3{
+                color:rgba(250, 250, 250, 1);
+                margin-top:-12%;
+                font-size:100%;
+                font-weight:400;
+
+            }
+            aside .menu ul li{
+                margin-top:10%;
+                text-align:center;
+                width:70%;
+                margin:12% auto;
+                margin-left:2%;
+                list-style:none;
+                color: rgba(97, 80, 84, 1);
+                padding-top:15%;
+
+            }
+            aside .menu ul li:hover{
+                color:#78aeb2;
+                
+            }
+            aside ul{
+                display:block;
+                margin-top:1%;
+            }
+            aside hr{
+                width:50%;
+                margin-top:30%;
+                margin-right:22%;
+                
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav onclick="tog()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </nav>
+             <img class="img" src="amazool_white.png"/>
+             <img class="cart" src="cart.png"/>
+            
+             </header>
+
+        <aside>
+                <div class="menu" id="tog">
+                    <div class="profile">
+                        
+                        <h3>مشتري</h3>
+                    </div>
+                      <ul>
+                            <li>الرئيسية</li>
+                            <li>الفئات</li>
+                            <li>تواصل معنا</li>
+                            <li>المزيد عنا</li>
+                            <hr>
+                           
+                        </ul>
+                 </div>
+            </aside>
+
+
+      
+        <main>
+           <input type="text" placeholder="البحث عن منتج" /> 
+           <div class="glyphicon glyphicon-search"></div>
+        <div class='container'>
+                 <div class="img">
+                 <img src='car.png'/>
+            </div>
+                <h1>عربية بوكو</h1>
+                 <p>    34.000 SDG </p>
+                 <div class="stars">
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                 </div>
+                 <button>إضافة إلى السلة</button>
+
+            </div>
+
+            <!-- watch-->
+
+            <div class='container'>
+                 <div class="img">
+                 <img src='watch.jpg'/>
+            </div>
+                <h1> ساعة مشفشفة</h1>
+                 <p>    3.000 SDG </p>
+                 <div class="stars">
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                 </div>
+                 <button>إضافة إلى السلة</button>
+
+            </div>
+
+            <!--khlat-->
+
+            <div class='container'>
+                 <div class="img">
+                 <img src='machine.jpg'/>
+            </div>
+                <h1> خلاط خسران</h1>
+                 <p>    9.000 SDG </p>
+                 <div class="stars">
+                    <span class=" glyphicon-star-empty"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>  
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                 </div>
+                 <button>إضافة إلى السلة</button>
+
+            </div>
+
+
+           
+         
+            
+        </main>
+       
+            <script>
+                function tog(){
+                    var x = document.getElementById("tog");
+                    if(x.style.display ==="block"){
+                        x.style.display = "none";
+                    }else {
+                        x.style.display = "block";
+                    }
+                }
+            </script>
+    </body>
+</html>
